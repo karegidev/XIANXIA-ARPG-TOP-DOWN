@@ -1,0 +1,66 @@
+Inspect analyze and memorize these 
+For future implementation reference, troubleshooting and error prevention 
+
+2d particles systems effects
+
+https://docs.godotengine.org/en/latest/tutorials/2d/particle_systems_2d.html
+
+
+Godot 2d physics
+
+https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html
+
+Godot nodes
+
+https://docs.godotengine.org/en/stable/getting_started/step_by_step/nodes_and_scenes.html
+
+Godot Animation Player
+
+https://docs.godotengine.org/en/stable/classes/class_animationplayer.html
+
+Godot TileMaps
+
+https://docs.godotengine.org/en/stable/tutorials/2d/using_tilemaps.html
+
+Godot navigation overview
+
+https://docs.godotengine.org/en/stable/tutorials/navigation/navigation_introduction_2d.html
+
+Godot 2d docs
+
+https://docs.godotengine.org/en/stable/tutorials/2d/index.html
+
+Godot troubleshooting
+
+https://docs.godotengine.org/en/stable/tutorials/troubleshooting.html
+
+Godot control inputs
+https://docs.godotengine.org/en/stable/tutorials/inputs/controllers_gamepads_joysticks.html
+
+Touchscreen controls input
+https://docs.godotengine.org/en/stable/classes/class_touchscreenbutton.html
+
+Godot movements
+https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html
+
+Godot level/map
+https://forum.godotengine.org/t/questions-about-creating-levels-maps/132690/2
+
+Godot shader
+https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/index.html
+
+https://docs.godotengine.org/en/stable/tutorials/shaders/your_first_shader/your_first_2d_shader.html
+
+Godot 4.7 docs https://docs.godotengine.org/en/stable/tutorials/2d/index.html
+
+Godot gdscripts reference
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html
+
+Godot 2d UI
+https://docs.godotengine.org/en/stable/tutorials/ui/index.html
+
+Godot progress bar
+
+https://docs.godotengine.org/en/stable/classes/class_progressbar.html
+
+Read ans inspect all this as a solid reference but don't limit to only this, always learn to update latest information, deep research on other source like github, Reddit, or community posts for more accurate references.
