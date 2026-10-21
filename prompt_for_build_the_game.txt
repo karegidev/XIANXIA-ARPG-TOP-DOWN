@@ -1,0 +1,225 @@
+GODOT 4.7+ XIANXIA TOP-DOWN ARPG SANDBOX
+
+1. ROLE & OBJECTIVE
+
+Act as a senior Godot Engine 4.7+ developer, 2D ARPG systems architect, gameplay programmer, and professional game designer.
+
+Inspect my attached existing Godot project ZIP and all accompanying asset files. The project is incomplete and contains systems that need improvement, expansion, and debugging.
+
+Your objective is to transform the existing project into a working, playable, expandable 2D top-down Xianxia life-simulation ARPG for Android.
+
+Do not rebuild everything from scratch unnecessarily. Preserve functional systems, improve existing implementations, and integrate new features without breaking previous functionality.
+
+2. TECHNICAL REQUIREMENTS
+
+- Use Godot 4.7+ and maintain compatibility with the latest supported version.
+- Target Android exclusively, using the mobile renderer and landscape orientation.
+- Use touchscreen controls only: virtual analog joystick, action buttons, interactive menus, and touch-friendly interfaces. No PC keyboard or mouse dependencies.
+- Optimize performance, memory usage, loading times, and input responsiveness for Android devices.
+- Use modular scenes, reusable scripts, data-driven resources, and expandable systems.
+- Avoid unnecessary dependencies and deprecated APIs.
+
+3. GAMEPLAY DESIGN
+
+Combine the following gameplay inspirations into one cohesive experience:
+
+- Stardew Valley: Life simulation, farming, cultivation, gathering, crafting, relationships, NPC schedules, exploration, and a living world.
+- Minecraft: Functional inventory, item management, equipment, storage, item stacking, crafting interfaces, and grid-based item organization.
+- Sekiro: Responsive, skill-based close combat, deflection, posture or guard-break mechanics, precise timing, and meaningful enemy openings.
+- Advanced ARPG combat: Fast real-time melee, mid-range techniques, long-range attacks, cultivation abilities, projectiles, and tactical enemy encounters.
+
+These are design references, not instructions to copy their assets or implementation.
+
+Balance life simulation, exploration, cultivation, combat, and social interaction. The world should offer meaningful activities beyond fighting.
+
+4. COMBAT & CULTIVATION SYSTEMS
+
+Implement a responsive, real-time combat system with light attacks and chargeable heavy attacks. Heavy attacks must support holding and releasing the attack button.
+
+Support different weapon classes, cultivation techniques, and combat ranges. Each weapon and ability must have distinct mechanics, timing, reach, effects, and tactical advantages.
+
+Requirements:
+
+- Distinct weapon movesets, combos, recovery times, hitboxes, and attack animations or procedural effects appropriate to the available assets.
+- Sword slashes, spear thrusts, bows, projectiles, elemental techniques, defensive abilities, dodging, blocking, and deflection where appropriate.
+- Functional hit detection, damage calculation, stamina or energy consumption, cooldowns, interruption, knockback, and enemy reactions.
+- Physical projectile movement, collision, travel time, and appropriate impact behavior.
+- Elemental effects such as fireballs, water projectiles, lightning, and cultivation energy, using suitable particles, shaders, and impact effects.
+- Cultivation realms that influence attributes, skills, enemy difficulty, and access to restricted areas.
+- Distinct combat identities for different characters, weapons, enemies, bosses, and cultivation paths.
+
+Do not give every character the same repetitive attack patterns. Avoid indiscriminate spinning attacks, arbitrary damage, and enemies that attack randomly without tactical logic.
+
+5. ADVANCED NPC & ENEMY AI
+
+Create a behavior-driven AI system with distinct personalities, intentions, combat styles, and reactions.
+
+Characters should consider factors such as:
+
+- Disposition, reputation, relationships, faction allegiance, fear, hostility, and trust.
+- Threat assessment, distance, line of sight, stamina, health, available abilities, and tactical opportunities.
+- Retreating, guarding, dodging, pursuing, calling for assistance, negotiating, surrendering, or seeking revenge when appropriate.
+- Different schedules and behaviors for villagers, merchants, cultivators, sect members, bandits, assassins, beasts, demons, and divine creatures.
+
+NPCs must not behave like mindless enemies. Friendly, neutral, and hostile characters should react differently to the player's actions.
+
+Reputation, Consequences & Mercy
+
+Implement a meaningful spare-or-kill system.
+
+When the player attacks or attempts to kill an NPC:
+
+- Nearby allies or loved ones may intervene, defend the target, negotiate, beg for mercy, or offer items as a trade.
+- Their reactions must depend on relationships, reputation, personality, available resources, and perceived danger.
+- Enemies may surrender, retaliate, remember previous encounters, report crimes, hire assassins, or organize revenge.
+- The player may negotiate, spare, capture where appropriate, or kill targets.
+- Actions must have persistent consequences for relationships, factions, settlements, quests, and future encounters.
+
+Avoid scripted reactions that trigger identically in every situation. Use context-sensitive decisions and consistent rules.
+
+6. WORLD, MAPS & EXPLORATION
+
+Expand the project beyond a single map scene. Build a connected world with multiple explorable regions, each featuring distinct environments, atmosphere, architecture, inhabitants, resources, enemies, and encounters.
+
+Include suitable regions such as:
+
+- Mortal Realms and villages.
+- Dark Forests and dangerous wilderness.
+- Azure Sect territories.
+- Blood Lotus Sect territories.
+- Endless Verdant Vine territories.
+- Demon realms.
+- Celestial territories.
+- Ancient God ruins and restricted divine regions.
+
+Create additional locations where supported by the available assets and project scope.
+
+Requirements:
+
+- Travel between separate map scenes through portals, gates, paths, or other appropriate transitions.
+- Restrict access to dangerous regions according to cultivation realm, quest requirements, or other meaningful conditions.
+- Implement distinct regional enemies, bosses, resources, events, and NPC behaviors.
+- Include sect buildings, settlements, dungeons, sacred grounds, and divine creature habitats where appropriate.
+- Ensure map transitions preserve relevant player state, inventory, progression, and world data.
+- Establish consistent character, creature, building, and environmental scales.
+
+Design the architecture so more regions can be added without rewriting the core systems.
+
+7. ASSET INSPECTION & INTEGRATION
+
+Inspect the entire attached ZIP before making changes.
+
+Read every existing TXT documentation file within the project folders. If a folder has no TXT documentation, create concise documentation when useful to explain its contents, asset purpose, or implementation.
+
+Inventory and inspect the available assets, scenes, scripts, resources, and configuration files.
+
+Requirements:
+
+- Integrate every relevant provided asset into an appropriate working game feature.
+- Do not leave usable assets unused without a clear technical reason.
+- Preserve assets that are not being replaced or improved.
+- Avoid missing references, duplicate resources, broken paths, incompatible formats, and unnecessary asset duplication.
+- Match assets to their intended characters, weapons, creatures, items, buildings, environments, and effects.
+- Create missing supporting logic or resources when necessary.
+- Do not fabricate nonexistent animations or assume static images contain animation frames.
+
+All characters, NPCs, cultivators, animals, and beasts originally face right. Account for this orientation when implementing movement, aiming, attacks, sprite flipping, and directional effects.
+
+8. ANDROID UI & TOUCH CONTROLS
+
+Build a polished, readable, touch-friendly interface suitable for landscape mobile gameplay.
+
+Required systems include:
+
+- Responsive virtual analog joystick and contextual action buttons.
+- Combat, dodge, block, interaction, cultivation, and ability controls.
+- Inventory, equipment, character status, cultivation, skills, quests, crafting, map, relationships, and system menus as appropriate.
+- Clearly visible dialogue and interaction interfaces.
+- Scrollable lists, inventories, skill trees, and menus.
+- Native touchscreen scrolling through swipes and dragging, not merely scroll buttons.
+- Responsive layout, appropriate touch targets, and clear visual feedback.
+
+Every visible button and menu must perform its intended function. Menus must open in visible, properly positioned panels, and must not freeze the game or become hidden outside the screen.
+
+Support appropriate gameplay pausing, dialogue states, menu focus, and input blocking to prevent accidental attacks or movement while interacting with interfaces.
+
+9. CODE QUALITY & PROJECT ARCHITECTURE
+
+Use maintainable, modular GDScript and Godot-native systems.
+
+- Follow Godot 4.7+ APIs, syntax, node conventions, and resource-management practices.
+- Keep gameplay logic separate from UI presentation wherever practical.
+- Use reusable components for combat, AI, interactions, inventory, cultivation, projectiles, and status effects.
+- Use signals and data-driven configurations where appropriate.
+- Handle invalid references, missing nodes, empty data, unexpected states, and scene transitions safely.
+- Avoid duplicated logic, placeholder buttons, fake functionality, hardcoded dependencies, and unnecessary rewrites.
+- Ensure new systems remain compatible with existing functional features.
+- Document important architectural decisions and extension points.
+
+10. REQUIRED RESEARCH & ERROR PREVENTION
+
+Consult the official Godot documentation and verify relevant APIs before implementing or modifying systems.
+
+Official references:
+
+https://docs.godotengine.org/en/4.7/
+
+https://docs.godotengine.org/en/stable/tutorials/2d/index.html
+
+https://docs.godotengine.org/en/stable/
+
+https://docs.godotengine.org/en/4.7/tutorials/troubleshooting.html
+
+Research relevant implementation examples, known issues, and community discussions when necessary. Prefer official documentation and verified solutions over untested assumptions.
+
+If the Godot executable is unavailable, perform the strongest static checks possible and clearly distinguish verified results from tests that could not be performed.
+
+Before finalizing:
+
+1. Inspect all modified scripts for syntax errors, invalid APIs, incorrect types, missing references, and unsafe node access.
+2. Check scene files, resource paths, signal connections, input mappings, project settings, and autoloads.
+3. Verify that all required controls, menus, interactions, combat systems, and map transitions are connected and functional.
+4. Check for likely runtime errors, broken scene loading, invalid function arguments, and input conflicts.
+5. Run the project with Godot's available validation tools and test critical gameplay flows whenever possible.
+6. Review the official troubleshooting documentation and fix identified errors.
+7. Recheck the project after fixes to ensure they have not broken other systems.
+
+Do not claim that the project is error-free or fully tested unless the relevant checks have actually been completed.
+
+11. FINAL DELIVERABLE
+
+Return a complete, self-contained Godot 4.7+ project in a downloadable ZIP file.
+
+The ZIP must contain the project configuration, scenes, scripts, resources, assets, documentation, and other required files needed to open and play the game.
+
+The result must be a functional, playable foundation for continued development, not merely a design document, code snippets, mockup, or collection of disconnected features.
+
+Preserve working systems, implement features rather than merely creating their UI, and prioritize stability and integration over adding large numbers of unfinished systems.
+
+My GitHub repository is currently empty:
+
+https://github.com/karegidev/XIANXIA-ARPG-TOP-DOWN/upload
+
+Do not assume the repository has been populated, you have permission to upload files, if you have the capabilities. Deliver the completed ZIP independently.
+
+12. FINAL VERIFICATION CHECKLIST
+
+Before delivering the ZIP, confirm the following:
+
+- [ ] Correct Godot version and Android landscape configuration.
+- [ ] Existing project and assets inspected.
+- [ ] Existing functional systems preserved.
+- [ ] Touchscreen joystick and action buttons appear and work.
+- [ ] Menus, dialogue, inventory, interactions, and touchscreen scrolling work.
+- [ ] Light and chargeable heavy attacks work.
+- [ ] Melee, mid-range, and long-range combat function correctly.
+- [ ] Enemies use distinct, context-sensitive AI and attack patterns.
+- [ ] Reputation, relationships, and spare-or-kill consequences function.
+- [ ] Multiple regions and map transitions work.
+- [ ] Relevant supplied assets are integrated.
+- [ ] Scripts, resources, and scene references have been checked.
+- [ ] Available validation and gameplay tests have been completed.
+- [ ] Known unresolved issues and untested areas are documented.
+- [ ] Final ZIP opens as a Godot project and contains all required files.
+
+Take the time necessary to inspect, implement, test, debug, and integrate the project properly. Prioritize a stable, playable result with a solid architecture for future updates.
